@@ -1,0 +1,194 @@
+<html<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/1953c42643.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylehome.css">
+    
+    <title>RAMON | PROJECT PORTFOLIO</title>
+</head>
+<nav class="navbar-home">
+  <header class="header">
+
+      <a href="https://twitter.com/rammiq">
+        <img class="img" src="img/logo_small_icon_only_inverted.png" alt="">
+      </a>  
+
+
+      <div id="menuArea">
+        <input type="checkbox" id="menuToggle"></input>
+        
+        <label for="menuToggle" class="menuOpen">
+          <div class="open"></div>
+        </label>
+      
+        <div class="menu menuEffects">
+          <label for="menuToggle"></label>
+          <div class="menuContent">
+            <ul>
+              <li><a href="Home.html">HOME</a></li>
+              <li><a href="https://www.eteryclo.com/">SHOP</a></li>
+              <li><a href="#"> SOCIALS</a></li>
+              <li><a href="wwww.twitter.com/rammiq"> <img src="img/iconmonstr-twitter-1-120.png" alt=""></a></li>
+            </ul> 
+              
+          </div>
+        </div>
+
+  </header>
+  
+  
+</nav>
+<body class="background-home">
+    
+    
+    <div>
+      <img  class="home-element" src="img/Loader_loop_by_gleb.gif" alt="">
+    </div>
+    
+    <div>
+        <h1 class="title-home">hi, I'm ramon,</h1>
+        <h1 class="subtitle-home">web developer</h1>
+        <h2 class="subtitle2-home">I'm specialized in building websites. </h2>
+    </div>
+    <div class="button-home">
+      <a href="mailto:ramon.kramer@gmx.ch" class="button">contact me</a>
+    </div>
+
+    <div class="container1">
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+    </div>
+    <hr class="hr-home">
+    
+
+    <div class="home-projects">
+      <h1>Project Portfolio</h1>
+      <h1 class="subtitle-home-projects">Recent projects i have created.</h1>
+    </div>
+    
+    <div class="history-tl-container">
+      <ul class="tl">
+        <li class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp">
+            projects<br>
+          </div>
+
+        </li>
+        <li class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp">
+            about me<br>
+          </div>
+
+          
+        </li>
+        <li class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp">
+            roadmap<br>
+          </div>
+          
+        </li>
+
+
+      </ul>
+
+    </div>
+    
+
+    <div class="home-project-list">
+      <h2>
+        <a href="index.html"><img  class="glossary-img" src="img/Glossary.png" alt=""></a>
+      </h2>
+      <h2>
+        <a href=""><img class="calculator-img" src="img/Project Site.png" alt=""></a>
+      </h2>
+      <a href=""><img class="calculator1-img" src="img/Calculator.png" alt=""></a>
+      <a href=""><img class="calculator2-img" src="img/Calculator.png" alt=""></a>
+
+
+    </div>
+    <hr class="hr-projects">
+
+    <div class="aboutmepage">
+      <h1 class="subtitle-aboutme">Some Keyfacts <br> about</h1>
+      <h1 class="title-aboutme">ME</h1>
+      <h1 class="aboutmelist">
+        Ramon <br>
+        17 y/o<br>
+        <span class="aboutmelistsubtitle">Based in</span>  <br>
+        Switzerland <br>
+        <span class="aboutmelistsubtitle">Self-taught</span>  <br>
+        Web developer
+
+      </h1>
+
+      <a>
+      <div class="mouse_move">
+        
+          <img
+            id="img1" 
+            src="img/iconmonstr-twitter.png"
+            class="mouse"
+            value="5"
+          />
+      </div>
+      </a>
+      <hr class="hr-aboutme">
+
+      <script type="text/javascript">
+        document.addEventListener("mousemove", parallax);
+        function parallax(event) {
+          this.querySelectorAll(".mouse").forEach((shift) => {
+            const position = shift.getAttribute("value");
+            const x = (window.innerWidth - event.pageX * position) / 90;
+            const y = (window.innerHeight - event.pageY * position) / 90;
+    
+            shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+          });
+        }
+      </script>
+      
+    </div>
+
+    <div class="roadmap">
+      
+      <h1 class="roadmaptitle">Roadmap</h1>
+      <h1 class="roadmapsubtitle">for the Future</h1>
+
+      <div class="roadmaptimelinetitle">
+        <a class="button-roadmap">Timeline</a>
+      </div>
+
+      <ul class="timeline">
+        <li data-year="2021" data-text="improve html/css skills"></li>
+        <li data-year="2022" data-text="create projects"></li>
+        <li data-year="2023" data-text="offer websites"></li>
+        <li data-year="2024" data-text="start JS/react"></li>
+        <li data-year="2025" data-text="source of income"></li>
+        
+      </ul> 
+      
+      
+      <hr class="hr-roadmap">
+
+    </div>
+    
+    <div class="footer">
+
+      <img class="wave-roadmap" src="img/Footer.png" alt="">
+      
+      
+    </div>
+
+    
+    <script src="home.js"></script>
+    
+</body>
